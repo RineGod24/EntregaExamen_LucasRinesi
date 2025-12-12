@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eprenda - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <img src="images/logo.png" alt="Eprenda Logo">
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">☰</button>
+        </div>
+    </nav>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>¡Contactanos!</h1>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="text" id="email" name="email" placeholder="ejemplo@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option value="">Seleccione un país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="peru">Peru</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+            
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+    </section>
+</body>
+</html>
