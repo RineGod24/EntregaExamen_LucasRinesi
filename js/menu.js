@@ -14,6 +14,6 @@ menuToggle.addEventListener('click', function(){
 const navLinks = document.querySelectorAll('.nav-menu a');
 navLinks.forEach(link => {
     link.addEventListener('click', function(){
-        navLinks.classList.remove('active');
+        navMenu.classList.remove('active');
     });
 });
