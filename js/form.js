@@ -43,8 +43,8 @@ form.addEventListener('submit', function(e){
 function mostrarMensaje(texto, tipo){
     mensaje.textContent = texto;
     mensaje.className = `mensaje ${tipo}`;
-    mensaje.scrollIntroView({
-        bahavior: 'smooth',
+    mensaje.scrollIntoView({
+        behavior: 'smooth',
         block: 'nearest'
     });
 };
