@@ -1,6 +1,4 @@
-/* =========================
-   RESET + VARIABLES
-========================= */
+/* ==== RESET + VARIABLES ==== */
 *,
 *::before,
 *::after {
@@ -22,7 +20,7 @@
 
   /* Fondos y superficies */
   --bg: #f6f7fb;
-  --surface: #ffffff;
+  --surface: #ffff;
   --border: rgba(17, 24, 39, 0.12);
   --border-hover: rgba(17, 24, 39, 0.25);
 
@@ -87,9 +85,7 @@ a{
   white-space: nowrap;
 }
 
-/* =========================
-   NAVBAR CON EFECTOS
-========================= */
+/* ==== NAVBAR CON EFECTOS ==== */
 .navbar{
   position: sticky;
   top: 0;
@@ -115,7 +111,7 @@ a{
 }
 
 .navbar img{
-  height: 44px;
+  height: 60px;
   width: auto;
   transition: transform 0.3s var(--ease-bounce);
 }
@@ -173,7 +169,7 @@ a{
   transform: translateY(0);
 }
 
-/* Botón hamburguesa mejorado */
+/* Botón hamburguesa */
 .menu-toggle{
   display: none;
   position: relative;
@@ -261,9 +257,7 @@ a{
   }
 }
 
-/* =========================
-   CARRUSEL MEJORADO
-========================= */
+/* ==== CARRUSEL ==== */
 .carousel{
   position: relative;
   overflow: hidden;
@@ -438,9 +432,7 @@ a{
   border-color: rgba(255,255,255,.3);
 }
 
-/* =========================
-   SECCIÓN CURSOS
-========================= */
+/* ==== SECCIÓN CURSOS ==== */
 .courses{
   padding: 64px 0;
   background: var(--bg);
@@ -609,9 +601,7 @@ a{
   }
 }
 
-/* =========================
-   FORMULARIO DE CONTACTO
-========================= */
+/* ==== FORMULARIO DE CONTACTO ==== */
 .contact-section{
   padding: 64px 0;
   min-height: 60vh;
@@ -677,7 +667,7 @@ a{
   min-height: 130px;
 }
 
-/* Efecto de focus mejorado */
+/* Efecto de focus */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus{
@@ -700,7 +690,7 @@ a{
   accent-color: var(--primary);
 }
 
-/* Botón de envío premium */
+/* Botón de envío */
 .btn-submit{
   width: 100%;
   padding: 16px 20px;
@@ -775,9 +765,7 @@ a{
   box-shadow: 0 4px 12px rgba(239,68,68,.15);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ==== FOOTER ==== */
 .footer{
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: rgba(255,255,255,.9);
@@ -813,7 +801,7 @@ a{
 }
 
 .footer-section img{
-  height: 46px;
+  height: 60px;
   width: auto;
   filter: brightness(1.2);
   transition: transform 0.3s var(--ease-bounce);
@@ -833,14 +821,15 @@ a{
 .social-icons a{
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.15);
+  border: 2px solid rgba(255,255,255,.25);
   transition: all 0.3s var(--ease-smooth);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
 }
 
 .social-icons a::before{
@@ -863,9 +852,8 @@ a{
 }
 
 .social-icons img{
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) invert(1);
+  width: 24px;
+  height: 24px;
   opacity: .85;
   transition: all 0.3s var(--ease-smooth);
   position: relative;
